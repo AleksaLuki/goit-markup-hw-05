@@ -613,7 +613,7 @@ address {
   justify-content: center;
   width: 30px;
   height: 30px;
-  padding: 0;
+  padding: 0px;
   background-color: transparent;
   cursor: pointer;
   border-radius: 50%;

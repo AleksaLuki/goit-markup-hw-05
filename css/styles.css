@@ -136,13 +136,14 @@ ul {
 .contact {
   padding: 32px 0;
 
-  transition-property: color;
+  transition-property: color fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact:hover,
 .contact:focus {
   color: var(--brand-color);
+  fill: var(--brand-color);
 }
 .mail-link {
   display: flex;
@@ -160,22 +161,26 @@ ul {
 }
 .header-tel-link {
   display: flex;
+  color: #757575;
 }
 .mail-icon {
   margin-right: 10px;
-  fill: #757575;
+  fill: currentColor;
 
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
-.mail-link:hover,
-.mail-link:focus {
+.mail-link:hover 
+.mail-link:focus  {
   fill: var(--brand-color);
+  color: var(--brand-color);
 }
+
 .tel-icon {
   margin-right: 10px;
-  fill: #757575;
+  fill: currentColor;
 
   transition-property: fill;
   transition-duration: 250ms;
@@ -436,6 +441,9 @@ ul {
   width: 44px;
   height: 44px;
   padding: 12px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* CLIENTS */
@@ -474,12 +482,12 @@ ul {
   justify-content: center;
   width: 100%;
   height: 100%;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
   padding: 16px 32px;
   fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 
-  transition-property: fill;
+  transition-property: fill border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -597,6 +605,9 @@ address {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2px);
+
+  transform: scale(1);
+  transition: opacity 250ms, visibility 250ms;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -651,24 +662,25 @@ address {
   border: 0px;
   cursor: pointer;
   font-family: inherit;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   color: var(--text-color);
-  background: #f5f4fa;
+  background-color: #f5f4fa;
 
-  transition-property: background-color;
+  transition-property: color background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filtr-btn:not(:last-child) {
   margin-right: 8px;
 }
-.all:hover,
-.all:focus {
+.list-btn:hover,
+.list-btn:focus {
   color: #ffffff;
-  background: #2196f3;
+  background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }

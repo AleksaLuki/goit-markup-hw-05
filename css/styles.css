@@ -136,7 +136,7 @@ ul {
 .contact {
   padding: 32px 0;
 
-  transition-property: color fill;
+  transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -487,7 +487,7 @@ ul {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition-property: fill border;
+  transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

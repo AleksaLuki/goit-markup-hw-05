@@ -670,7 +670,7 @@ address {
   color: var(--text-color);
   background-color: #f5f4fa;
 
-  transition-property: color background-color;
+  transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

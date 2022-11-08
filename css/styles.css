@@ -163,6 +163,11 @@ ul {
 }
 .mail-icon {
   margin-right: 10px;
+  fill: #757575;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail-link:hover,
 .mail-link:focus {
@@ -170,10 +175,16 @@ ul {
 }
 .tel-icon {
   margin-right: 10px;
+  fill: #757575;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-tel-link:hover,
 .header-tel-link:focus {
   fill: var(--brand-color);
+  color: var(--brand-color);
 }
 /*HERO*/
 
